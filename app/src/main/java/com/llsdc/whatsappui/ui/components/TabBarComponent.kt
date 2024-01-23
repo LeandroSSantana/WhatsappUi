@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.llsdc.whatsappui.R
+import com.llsdc.whatsappui.model.chat.ChatContentModel
 import com.llsdc.whatsappui.ui.screens.CallsContentTab
 import com.llsdc.whatsappui.ui.screens.ChatsContentTab
 import com.llsdc.whatsappui.ui.screens.StatusContentTab
@@ -54,8 +55,11 @@ fun TabBarComponent() {
             selectedTab = "status"
         }
     }
+
+    val chatContentModel = ChatContentModel()
+
     when (selectedTab) {
-        "chats" -> ChatsContentTab()
+        "chats" -> ChatsContentTab(chatContentModel.chatList) { }
         "calls" -> CallsContentTab()
         "status" -> StatusContentTab()
     }
@@ -77,19 +81,6 @@ fun TabItem(text: String, isSelected: Boolean, onClick: () -> Unit) {
         )
     }
 }
-
-//@Composable
-//fun TabItem(text: String, isSelected: Boolean, onClick: () -> Unit) {
-//    Text(
-//        text = text,
-//        style = TextStyle(
-//            fontSize = 16.sp,
-//            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-//            color = MaterialTheme.colorScheme.tertiary
-//        ),
-//        modifier = Modifier.clickable { onClick() }
-//    )
-//}
 
 @Preview
 @Composable
