@@ -9,8 +9,6 @@ class ChatContentModel {
             "E ai seu verme, topa treinar hoje?",
             "10:30 AM",
             true,
-            false,
-            10,
             R.drawable.vegeta
         ),
         ChatModel(
@@ -18,8 +16,6 @@ class ChatContentModel {
             "Lorem ipsum dolor sit amet.",
             "Yesterday",
             false,
-            true,
-            0,
             R.drawable.bulma
         ),
 
