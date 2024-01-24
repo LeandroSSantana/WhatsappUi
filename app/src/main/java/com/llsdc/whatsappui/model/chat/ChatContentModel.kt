@@ -12,8 +12,8 @@ class ChatContentModel {
             R.drawable.vegeta
         ),
         ChatModel(
-            "Jane Smith",
-            "Lorem ipsum dolor sit amet.",
+            "Bulma",
+            "Alguém sabe por onde anda o Vegeta?",
             "Yesterday",
             false,
             R.drawable.bulma
