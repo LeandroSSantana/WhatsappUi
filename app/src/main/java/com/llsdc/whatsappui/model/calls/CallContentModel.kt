@@ -12,7 +12,7 @@ class CallContentModel {
             R.drawable.ic_call_made
         ),
         CallModel(
-            "Jane Smith",
+            "Will Smith",
             "23 de janeiro, ",
             "14:35",
             R.drawable.will,

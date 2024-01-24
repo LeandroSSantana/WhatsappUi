@@ -13,7 +13,7 @@ class ChatContentModel {
         ),
         ChatModel(
             "Bulma",
-            "Alguém sabe por onde anda o Vegeta?",
+            "O Vegeta esta com você \uD83D\uDE21?",
             "Yesterday",
             false,
             R.drawable.bulma
